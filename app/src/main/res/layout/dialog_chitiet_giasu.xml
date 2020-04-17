@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_person_black_24dp"
+                    android:id="@+id/img_gs"/>
+
+                <Button
+                    android:id="@+id/btn_xoattgs"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/bogoc_btn_xanh"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Xóa thông tin gia sư"/>
+                <LinearLayout
+                    android:weightSum="9"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin gia sư:"
+                        android:textSize="16sp"
+                        android:textColor="@color/den"/>
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/id_gs"
+                        android:textColor="@color/blue"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Mã GS"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Họ tên gia sư"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_hotengs"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Email gia sư"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_emailgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Số điện thoại"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_sdtgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Địa chỉ"
+                    android:drawableLeft="@drawable/ic_home_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_diachigs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Trường theo học"
+                    android:drawableLeft="@drawable/ic_place_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_truongtheohocgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Chuyên ngành"
+                    android:drawableLeft="@drawable/ic_import_contacts_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_chuyennganhgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Môn dạy"
+                    android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_mondaygs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Trình độ"
+                    android:drawableLeft="@drawable/ic_school_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_trinhdogs"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

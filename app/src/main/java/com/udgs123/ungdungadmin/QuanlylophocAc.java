@@ -1,0 +1,14 @@
+package com.udgs123.ungdungadmin;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class QuanlylophocAc extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_quanlylophoc );
+    }
+}

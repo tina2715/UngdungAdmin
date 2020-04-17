@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/nen1234"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanlygiasuAc">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_weight="7"
+            android:id="@+id/edt_idgs"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="ID gia sư"
+            android:background="@drawable/et_custom"
+            android:padding="10dp"/>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tìm"
+            android:background="@drawable/bogoc_btn_xanh"
+            android:id="@+id/btn_timgs"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <Button
+            android:id="@+id/btn_chua"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bogoc_btn_chon"
+            android:text="Chưa XN"/>
+        <Button
+            android:id="@+id/btn_da"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bogoc_btn_chon"
+            android:text="Đã XN"/>
+        <Button
+            android:id="@+id/btn_khoa"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bogoc_btn_chon"
+            android:text="khóa" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/item_giasu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/giasu_recyclerview">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
