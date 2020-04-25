@@ -1,14 +1,14 @@
 package com.udgs123.ungdungadmin.Model;
 
 public class Giasu {
-    private String Id_gs;
-    private String  Hoten_gs, Email_gs, Sodienthoai_gs, Diachi_gs, Truongtheohoc_gs,
+    private String  Tentaikhoan_gs, Hoten_gs, Ngaysinh_gs, Email_gs, Sodienthoai_gs, Diachi_gs, Truongtheohoc_gs,
                     Chuyennganh_gs, Monday_gs, Trinhdo_gs;
 
-    public Giasu(String id_gs, String hoten_gs, String email_gs, String sodienthoai_gs, String diachi_gs,
+    public Giasu(String tentaikhoan_gs, String hoten_gs, String ngaysinh_gs, String email_gs, String sodienthoai_gs, String diachi_gs,
                  String truongtheohoc_gs, String chuyennganh_gs, String monday_gs, String trinhdo_gs) {
-        Id_gs = id_gs;
+        Tentaikhoan_gs = tentaikhoan_gs;
         Hoten_gs = hoten_gs;
+        Ngaysinh_gs = ngaysinh_gs;
         Email_gs = email_gs;
         Sodienthoai_gs = sodienthoai_gs;
         Diachi_gs = diachi_gs;
@@ -18,12 +18,13 @@ public class Giasu {
         Trinhdo_gs = trinhdo_gs;
     }
 
-    public String getId_gs() {
-        return Id_gs;
+
+    public String getTentaikhoan_gs() {
+        return Tentaikhoan_gs;
     }
 
-    public void setId_gs(String id_gs) {
-        Id_gs = id_gs;
+    public void setTentaikhoan_gs(String tentaikhoan_gs) {
+        Tentaikhoan_gs = tentaikhoan_gs;
     }
 
     public String getHoten_gs() {
@@ -32,6 +33,14 @@ public class Giasu {
 
     public void setHoten_gs(String hoten_gs) {
         Hoten_gs = hoten_gs;
+    }
+
+    public String getNgaysinh_gs() {
+        return Ngaysinh_gs;
+    }
+
+    public void setNgaysinh_gs(String ngaysinh_gs) {
+        Ngaysinh_gs = ngaysinh_gs;
     }
 
     public String getEmail_gs() {

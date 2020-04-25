@@ -33,8 +33,6 @@ public class QuanlygiasuAc extends AppCompatActivity {
         RecyclerViewAdapterGS recyclerViewAdapter = new RecyclerViewAdapterGS(mGiasu());
         myrecyclerview1.setAdapter(recyclerViewAdapter);
     }
-
-
     public List<Giasu> mGiasu() {
         List<Giasu> giasus = new ArrayList<>();
         try {
@@ -44,17 +42,19 @@ public class QuanlygiasuAc extends AppCompatActivity {
                 Toast.makeText(this, "Lỗi kết nối",Toast.LENGTH_SHORT).show();
             } else {
                 Statement st = connect.createStatement();
-                ResultSet rs = st.executeQuery("Select * from taikhoan_gs");
+                ResultSet rs = st.executeQuery("Select * from ttgs");
                 while (rs.next()) {
-                    giasus.add( new Giasu( rs.getString( "id_gs" ),
-                            rs.getString("hotengs"),
-                            rs.getString("emailgs"),
-                            rs.getString("sodienthoaigs"),
-                            rs.getString("diachigs"),
-                            rs.getString("truongtheohocgs"),
-                            rs.getString("chuyennganhgs"),
-                            rs.getString("mondaygs"),
-                            rs.getString("trinhdogs")
+                    giasus.add( new Giasu(
+                            rs.getString("Tentaikhoangs"),
+                            rs.getString("Hotengs"),
+                            rs.getString("Ngaysinhgs"),
+                            rs.getString("Emailgs"),
+                            rs.getString("Sdtgs"),
+                            rs.getString("Diachigs"),
+                            rs.getString("Truongtheohoc"),
+                            rs.getString("Chuyennganh"),
+                            rs.getString("Tenmongs"),
+                            rs.getString("Tentrinhdo")
                     ) );
                 }
             }

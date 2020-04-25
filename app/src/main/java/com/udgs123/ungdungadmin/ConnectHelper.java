@@ -13,7 +13,7 @@ public class ConnectHelper {
     @SuppressLint("NewApi")
     public Connection connections () {
         //From your Local or website
-        DB = "Ungdunggiasu";
+        DB = "Vidua";
         DBUserName = "sa";
         DBPassword = "123";
 

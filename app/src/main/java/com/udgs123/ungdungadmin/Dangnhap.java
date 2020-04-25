@@ -44,7 +44,7 @@ public class Dangnhap extends AppCompatActivity {
                             String tentaikhoan1= tentaikhoan.getText().toString().trim();
                             String matkhau1 = matkhau.getText().toString().trim();
                             progressBar.setVisibility(View.VISIBLE);
-                            String query ="select * from taikhoan_admin where tentaikhoan = '" + tentaikhoan1 + "' and matkhau = '"+ matkhau1 +"' ";
+                            String query ="select * from ttad where Tentaikhoanad = '" + tentaikhoan1 + "' and Matkhauad = '"+ matkhau1 +"' ";
                             Statement stmt = connect.createStatement();
                             ResultSet rs = stmt.executeQuery(query);
                             if (rs.next())

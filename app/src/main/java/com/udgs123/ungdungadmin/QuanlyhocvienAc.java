@@ -54,11 +54,12 @@ public class QuanlyhocvienAc extends AppCompatActivity {
                 Toast.makeText(this, "Kiểm tra kết nối", Toast.LENGTH_SHORT).show();
             } else {
                 Statement st = connect.createStatement();
-                ResultSet rs = st.executeQuery("Select * from taikhoan_hv");
+                ResultSet rs = st.executeQuery("Select * from tthv");
                 while (rs.next()) {
-                    hocviens.add(new Hocvien(rs.getString("hoten_hv"),
-                            rs.getString("email_hv"), rs.getString("sdt_hv"),
-                            rs.getString("diachi_hv")));
+                    hocviens.add(new Hocvien(rs.getString("Hotenhv"),
+                            rs.getString("Emailhv"),
+                            rs.getString("Sdthv"),
+                            rs.getString("Diachihv")));
                 }
             }
 
