@@ -21,7 +21,7 @@
 
     <!-- và đây là bán kính đường tròn ở 4 góc -->
     <corners
-        android:radius="10dp" >
+        android:radius="0dp" >
     </corners>
 
 </shape>
