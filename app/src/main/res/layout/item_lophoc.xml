@@ -1,7 +1,7 @@
 <LinearLayout
     android:layout_marginTop="7dp"
     android:layout_marginBottom="7dp"
-    android:background="@drawable/nen_den"
+    android:background="@drawable/nen_sang"
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tên lớp"
+            android:textStyle="bold"
             android:textColor="@color/orange"
             android:fontFamily="@font/dancing"
             android:textSize="24sp"
@@ -34,17 +35,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:text="Trạng thái lớp học"
-                android:textStyle="italic"
+                android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/blue"/>
             <TextView
-                android:layout_weight="4"
+                android:layout_weight="3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Trạng thái"
-                android:textColor="@color/white"
+                android:textColor="@color/blue"
                 android:textSize="16sp"
-                android:textStyle="italic"
+                android:textStyle="bold"
                 android:id="@+id/tv_trangthailop_item"/>
         </LinearLayout>
 
@@ -60,6 +61,7 @@
                 android:fontFamily="@font/ebgaramond"
                 android:textSize="16sp"
                 android:text="Mã số lớp"
+                android:textStyle="bold"
                 android:layout_weight="2"
                 android:textColor="@color/green"/>
             <TextView

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+<LinearLayout
     android:layout_marginTop="10dp"
-    android:background="@drawable/nen_den"
+    android:background="@drawable/nen_sang"
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -32,29 +31,30 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:id="@+id/id_hv"/>
+                android:id="@+id/tv_tentaikhoanhv_item"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tên học viên"
+                android:textStyle="bold"
                 android:textColor="@color/orange"
                 android:fontFamily="@font/dancing"
                 android:textSize="24sp"
-                android:id="@+id/tv_hotenhv"/>
+                android:id="@+id/tv_hotenhv_item"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:id="@+id/tv_emailhv"/>
+                android:id="@+id/tv_emailhv_item"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Địa chỉ"
-                android:textColor="@color/white"
+                android:textColor="@color/green"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:id="@+id/tv_diachihv"/>
+                android:id="@+id/tv_diachihv_item"/>
             <TextView
                 android:drawableLeft="@drawable/ic_phone_black_24dp"
                 android:drawablePadding="5dp"
@@ -66,11 +66,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/blue"
-                android:id="@+id/tv_sdthv"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:id="@+id/tv_gioitinhhv"/>
+                android:id="@+id/tv_sdthv_item"/>
         </LinearLayout>
             <Button
                 android:layout_gravity="center_vertical"

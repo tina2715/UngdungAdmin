@@ -1,17 +1,26 @@
 package com.udgs123.ungdungadmin.Model;
 
 public class Hocvien {
+    private String Tentaikhoan_hv;
     private String Hoten_hv;
     private String Email_hv;
     private  String Sdt_hv;
     private String Diachi_hv;
 
 
-    public Hocvien( String hoten_hv, String email_hv, String sdt_hv, String diachi_hv) {
+    public Hocvien(String tentaikhoan_hv, String hoten_hv, String email_hv, String sdt_hv, String diachi_hv) {
         Hoten_hv = hoten_hv;
         Email_hv = email_hv;
         Sdt_hv = sdt_hv;
-        Diachi_hv = sdt_hv;
+        Diachi_hv = diachi_hv;
+    }
+
+    public String getTentaikhoan_hv() {
+        return Tentaikhoan_hv;
+    }
+
+    public void setTentaikhoan_hv(String tentaikhoan_hv) {
+        Tentaikhoan_hv = tentaikhoan_hv;
     }
 
     public String getHoten_hv() {

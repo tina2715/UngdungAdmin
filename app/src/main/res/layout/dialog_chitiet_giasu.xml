@@ -1,41 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/white"
-    android:layout_height="match_parent">
-    <ScrollView
-        android:layout_alignParentTop="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Chitiet_giasu">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_marginTop="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
                 <ImageView
+                    android:layout_marginTop="20dp"
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
                     app:srcCompat="@drawable/ic_person_black_24dp"
                     android:id="@+id/img_gs"/>
-
-                <Button
-                    android:id="@+id/btn_xoattgs"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:background="@drawable/bogoc_btn_xanh"
-                    android:textColor="@color/white"
+                <TextView
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_trangthainguoidung_ct"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Xóa thông tin gia sư"/>
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái người dùng"
+                    android:gravity="center"/>
+
+               <LinearLayout
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="9">
+                   <Button
+                       android:background="@color/green"
+                       android:textColor="@color/white"
+                       android:id="@+id/btn_xoa_ct"
+                       android:layout_width="0dp"
+                       android:layout_height="30dp"
+                       android:layout_weight="3"
+                       android:text="Xóa"
+                       android:textSize="10dp"/>
+                   <Button
+                       android:background="@color/blue"
+                       android:textColor="@color/white"
+                       android:id="@+id/btn_kichhoat_ct"
+                       android:layout_width="0dp"
+                       android:layout_height="30dp"
+                       android:layout_weight="3"
+                       android:text="Kích hoat"
+                       android:textSize="10dp"/>
+                   <Button
+                       android:textColor="@color/white"
+                       android:background="@color/orange"
+                       android:id="@+id/btn_khoa_ct"
+                       android:layout_width="0dp"
+                       android:layout_height="30dp"
+                       android:layout_weight="3"
+                       android:text="Khóa"
+                       android:textSize="10dp"/>
+               </LinearLayout>
                 <LinearLayout
                     android:weightSum="10"
                     android:layout_marginLeft="30dp"
@@ -72,7 +105,7 @@
                     android:drawableLeft="@drawable/ic_person_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_hotengs"
+                    android:id="@+id/tv_hotengs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -85,7 +118,7 @@
                     android:drawableLeft="@drawable/ic_cake_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_ngaysinhgs"
+                    android:id="@+id/tv_ngaysinhgs_ct"
                     android:gravity="center_vertical"/>
 
                 <TextView
@@ -99,7 +132,7 @@
                     android:drawableLeft="@drawable/ic_email_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_emailgs"
+                    android:id="@+id/tv_emailgs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -112,7 +145,7 @@
                     android:drawableLeft="@drawable/ic_phone_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_sdtgs"
+                    android:id="@+id/tv_sdtgs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -125,7 +158,7 @@
                     android:drawableLeft="@drawable/ic_home_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_diachigs"
+                    android:id="@+id/tv_diachigs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -138,7 +171,7 @@
                     android:drawableLeft="@drawable/ic_place_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_truongtheohocgs"
+                    android:id="@+id/tv_truongtheohocgs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -151,7 +184,7 @@
                     android:drawableLeft="@drawable/ic_import_contacts_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_chuyennganhgs"
+                    android:id="@+id/tv_chuyennganhgs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -164,7 +197,7 @@
                     android:drawableLeft="@drawable/ic_library_books_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_mondaygs"
+                    android:id="@+id/tv_mondaygs_ct"
                     android:gravity="center_vertical"/>
                 <TextView
                     android:layout_marginLeft="30dp"
@@ -177,12 +210,11 @@
                     android:drawableLeft="@drawable/ic_school_black_24dp"
                     android:padding="10dp"
                     android:drawablePadding="5dp"
-                    android:id="@+id/tv_trinhdogs"
+                    android:id="@+id/tv_trinhdogs_ct"
                     android:gravity="center_vertical"/>
 
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 
 
 </RelativeLayout>

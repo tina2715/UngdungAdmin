@@ -59,7 +59,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/btn_round_coner"
+            android:background="@drawable/bogoc_btn_xanh"
             android:text="Đăng ký"
             android:textColor="@color/white"
             android:textStyle="bold"

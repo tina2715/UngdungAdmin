@@ -2,8 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Chitiet_hocvien">
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
@@ -45,20 +47,15 @@
                     android:text="Thông tin học viên:"
                     android:textSize="16sp"
                     android:textColor="@color/den"/>
+
                 <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:text="Mã số:  "
-                    android:gravity="end"
-                    android:textColor="@color/white"/>
-                <TextView
-                    android:id="@+id/id_hv"
+                    android:id="@+id/tv_tentaikhoanhv_ct"
                     android:textColor="@color/blue"
                     android:gravity="center"
-                    android:layout_width="75dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="Mã HV"/>
+                    android:text="Tên tài khoản hv"/>
             </LinearLayout>
             <TextView
                 android:layout_marginLeft="30dp"
@@ -71,7 +68,7 @@
                 android:drawableLeft="@drawable/ic_person_black_24dp"
                 android:padding="10dp"
                 android:drawablePadding="5dp"
-                android:id="@+id/tv_hotenhv"
+                android:id="@+id/tv_hotenhv_ct"
                 android:gravity="center_vertical"/>
 
             <TextView
@@ -85,7 +82,7 @@
                 android:drawableLeft="@drawable/ic_email_black_24dp"
                 android:padding="10dp"
                 android:drawablePadding="5dp"
-                android:id="@+id/tv_emailhv"
+                android:id="@+id/tv_emailhv_ct"
                 android:gravity="center_vertical"/>
             <TextView
                 android:layout_marginLeft="30dp"
@@ -98,7 +95,7 @@
                 android:drawableLeft="@drawable/ic_phone_black_24dp"
                 android:padding="10dp"
                 android:drawablePadding="5dp"
-                android:id="@+id/tv_sdthv"
+                android:id="@+id/tv_sdthv_ct"
                 android:gravity="center_vertical"/>
             <TextView
                 android:layout_marginLeft="30dp"
@@ -111,7 +108,7 @@
                 android:drawableLeft="@drawable/ic_place_black_24dp"
                 android:padding="10dp"
                 android:drawablePadding="5dp"
-                android:id="@+id/tv_diachihv"
+                android:id="@+id/tv_diachihv_ct"
                 android:gravity="center_vertical"/>
 
         </LinearLayout>

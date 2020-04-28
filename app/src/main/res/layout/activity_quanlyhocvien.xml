@@ -10,8 +10,8 @@
         android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:orientation="horizontal">
         <EditText
             android:layout_weight="8"
@@ -24,14 +24,12 @@
             android:layout_weight="2"
             android:textColor="@color/white"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="35dp"
             android:text="Tìm"
             android:background="@drawable/bogoc_btn_xanh"
             android:id="@+id/btn_timhv"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
