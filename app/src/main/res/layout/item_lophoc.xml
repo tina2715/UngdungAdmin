@@ -1,134 +1,143 @@
 <LinearLayout
-    android:layout_marginTop="7dp"
-    android:layout_marginBottom="7dp"
-    android:background="@drawable/nen_sang"
+    android:background="@color/white"
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
     android:weightSum="10"
-    android:padding="10dp">
-    <LinearLayout
-        android:layout_weight="8"
-        android:layout_width="0dp"
+    android:paddingTop="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tên lớp"
-            android:textStyle="bold"
-            android:textColor="@color/orange"
-            android:fontFamily="@font/dancing"
-            android:textSize="24sp"
-            android:id="@+id/tv_caplop_item"/>
+        android:background="@drawable/nen_sang">
         <LinearLayout
+            android:weightSum="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="6"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-            <TextView
+            android:orientation="horizontal">
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:text="Trạng thái lớp học"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/blue"/>
-            <TextView
-                android:layout_weight="3"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên lớp"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/dancing"
+                    android:textSize="24sp"
+                    android:id="@+id/tv_caplop_item"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Tên môn học"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tên môn học"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_tenmonhoc_item"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ebgaramond"
+                        android:textSize="16sp"
+                        android:text="Mã số lớp"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_weight="3"
+                        android:fontFamily="@font/ebgaramond"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mã lớp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"
+                        android:id="@+id/tv_malophoc_item"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_tentaikhoanhv_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_diadiem_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_ngaydukien_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_soluonggio_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_ngayhoctrongtuan_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_giobatdau_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_loaitrinhdo_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_mota_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_ngaytao_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_trangthailop_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_tentaikhoangs_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_hocphi_item"/>
+            </LinearLayout>
+            <Button
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Trạng thái"
-                android:textColor="@color/blue"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:id="@+id/tv_trangthailop_item"/>
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                android:id="@+id/btn_xemchitiet"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="5">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ebgaramond"
-                android:textSize="16sp"
-                android:text="Mã số lớp"
-                android:textStyle="bold"
-                android:layout_weight="2"
-                android:textColor="@color/green"/>
-            <TextView
-                android:layout_weight="3"
-                android:fontFamily="@font/ebgaramond"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Mã lớp"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/green"
-                android:id="@+id/tv_malophoc_item"/>
-        </LinearLayout>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_tentaikhoanhv_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_tenmonhoc_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_diadiem_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_ngaydukien_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_soluonggio_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_ngayhoctrongtuan_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_giobatdau_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_loaitrinhdo_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_mota_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_ngaytao_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_tentaikhoangs_item"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/tv_hocphi_item"/>
-    </LinearLayout>
-        <Button
-            android:layout_weight="2"
-            android:layout_gravity="center_vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_chevron_right_black_24dp"
-            android:id="@+id/btn_xemchitiet"/>
+    </RelativeLayout>
+
 </LinearLayout>

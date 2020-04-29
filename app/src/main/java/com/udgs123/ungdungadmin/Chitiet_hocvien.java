@@ -45,10 +45,10 @@ public class Chitiet_hocvien extends AppCompatActivity {
              ResultSet rs = st.executeQuery(query);
              if (rs.next()){
                  tentaikhoanhv.setText(rs.getString("Tentaikhoanhv"));
-                 hoten.setText(rs.getString("Hotengs"));
-                 email.setText(rs.getString("Emailgs"));
-                 sdt.setText(rs.getString("Sdtgs"));
-                 diachi.setText(rs.getString("Diachigs"));
+                 hoten.setText(rs.getString("Hotenhv"));
+                 email.setText(rs.getString("Emailhv"));
+                 sdt.setText(rs.getString("Sdthv"));
+                 diachi.setText(rs.getString("Diachihv"));
              }
 
          }

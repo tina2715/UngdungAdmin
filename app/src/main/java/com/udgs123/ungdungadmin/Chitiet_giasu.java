@@ -66,7 +66,6 @@ public class Chitiet_giasu extends AppCompatActivity {
                 Statement st = connect.createStatement();
                 ResultSet rs = st.executeQuery(query);
                 if (rs.next()){
-
                     if (rs.getInt("Trangthainguoidung")==0){
                         trangthainguoidung.setTextColor(Color.RED);
                         trangthainguoidung.setText("Đã khóa");

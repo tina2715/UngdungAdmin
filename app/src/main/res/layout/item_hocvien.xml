@@ -1,73 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_marginTop="10dp"
-    android:background="@drawable/nen_sang"
+    android:background="@color/white"
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
     android:weightSum="10"
-    android:padding="10dp"
+    android:paddingTop="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView
-        android:layout_weight="3"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/ic_person_black_24dp"
-        android:id="@+id/img_hv"/>
-    <LinearLayout
-        android:weightSum="10"
-        android:layout_weight="7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp">
+<!--    <ImageView-->
+<!--        android:layout_weight="3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:srcCompat="@drawable/ic_person_black_24dp"-->
+<!--        android:id="@+id/img_hv"/>-->
+    <RelativeLayout
+        android:background="@drawable/nen_sang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8">
-            <TextView
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="8"
+                android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:id="@+id/tv_tentaikhoanhv_item"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tên học viên"
-                android:textStyle="bold"
-                android:textColor="@color/orange"
-                android:fontFamily="@font/dancing"
-                android:textSize="24sp"
-                android:id="@+id/tv_hotenhv_item"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:id="@+id/tv_emailhv_item"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_tentaikhoanhv_item"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên học viên"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/dancing"
+                    android:textSize="24sp"
+                    android:id="@+id/tv_hotenhv_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_emailhv_item"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Địa chỉ"
-                android:textColor="@color/green"
-                android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:id="@+id/tv_diachihv_item"/>
-            <TextView
-                android:drawableLeft="@drawable/ic_phone_black_24dp"
-                android:drawablePadding="5dp"
-                android:fontFamily="@font/ebgaramond"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Số điện thoại"
-                android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/blue"
-                android:id="@+id/tv_sdthv_item"/>
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ"
+                    android:textColor="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_diachihv_item"/>
+                <TextView
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/ebgaramond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:id="@+id/tv_sdthv_item"/>
+            </LinearLayout>
             <Button
                 android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
@@ -75,6 +76,8 @@
                 android:layout_weight="2"
                 android:background="@drawable/ic_chevron_right_black_24dp"
                 android:id="@+id/btn_xemchitiet"/>
-    </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>

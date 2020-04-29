@@ -65,11 +65,11 @@ ArrayList<Hocvien> hocviens;
                 Statement st = connect.createStatement();
                 ResultSet rs = st.executeQuery(query);
                 while (rs.next()){
-                    tentaikhoan.add(rs.getString("Tentaikhoanhs"));
-                    hoten.add(rs.getString("Hotenhs"));
-                    email.add(rs.getString("Emailhs"));
-                    sdt.add(rs.getString("Sdths"));
-                    diachi.add(rs.getString("Diachihs"));
+                    tentaikhoan.add(rs.getString("Tentaikhoanhv"));
+                    hoten.add(rs.getString("Hotenhv"));
+                    email.add(rs.getString("Emailhv"));
+                    sdt.add(rs.getString("Sdthv"));
+                    diachi.add(rs.getString("Diachihv"));
                 }
                 tentaikhoanArr = new String[tentaikhoan.size()];
                 tentaikhoanArr = tentaikhoan.toArray(tentaikhoanArr);
