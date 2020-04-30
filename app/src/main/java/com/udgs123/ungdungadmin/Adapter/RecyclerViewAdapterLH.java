@@ -17,7 +17,6 @@ import com.udgs123.ungdungadmin.Model.OnItemClickListener;
 import com.udgs123.ungdungadmin.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecyclerViewAdapterLH extends RecyclerView.Adapter<RecyclerViewAdapterLH.MyViewHolder> {
     public ArrayList<Lophoc> mLophoc;
